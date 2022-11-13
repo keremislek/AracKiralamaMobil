@@ -15,9 +15,7 @@ public class PaymentTest {
         assertFalse(validator.isCardNumber("12345"));
     }
     @Test
-    public void isCardNumberFalse2(){
-        assertTrue(validator.isCardNumber("1234567891234567212123"));
-    }
+    public void isCardNumberFalse2(){assertFalse(validator.isCardNumber("1234567891234567212123"));}
     @Test
     public void isLastDateMonthCorrect(){
      assertTrue(validator.isLastDateMonth("12.10.2022"));
